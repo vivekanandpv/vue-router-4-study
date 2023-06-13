@@ -2,12 +2,13 @@
 import { router } from '../routes';
 
 const navigationHandler = () => {
-  router.push('/about');
+  //  router.push('/news/2023')
+  router.push({
+    path: `/news/${2023}`,
+  });
 };
 </script>
 <template>
   <h3>Home</h3>
-  <button class="btn btn-primary" @click="navigationHandler">
-    Go to About
-  </button>
+  <button class="btn btn-primary" @click="navigationHandler">Go to News</button>
 </template>
