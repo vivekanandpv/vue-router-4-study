@@ -12,7 +12,7 @@ export const router = createRouter({
       component: Home,
     },
     {
-      path: '/news',
+      path: '/news/:year([1-2][0-9]{3})',
       component: News,
     },
     {
