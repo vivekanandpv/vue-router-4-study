@@ -4,7 +4,10 @@ import { router } from '../routes';
 const navigationHandler = () => {
   //  router.push('/news/2023')
   router.push({
-    path: `/news/${2023}`,
+    name: 'news-route',
+    params: {
+      year: 2023,
+    },
   });
 };
 </script>

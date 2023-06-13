@@ -14,6 +14,7 @@ export const router = createRouter({
     {
       path: '/news/:year([1-2][0-9]{3})',
       component: News,
+      name: 'news-route',
     },
     {
       path: '/about',
