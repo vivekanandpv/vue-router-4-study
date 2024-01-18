@@ -13,11 +13,11 @@ export const router = createRouter({
     },
     {
       path: '/news/:year([1-2][0-9]{3})',
-      component: News,
+      component: () => import('./components/News.vue'),
     },
     {
       path: '/about',
-      component: About,
+      component: () => import('./components/About.vue'),
     },
     {
       path: '/:pathMatch(.*)*',
