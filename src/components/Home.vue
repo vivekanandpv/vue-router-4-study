@@ -8,6 +8,11 @@ const navigationHandler = () => {
     params: {
       year: 2023,
     },
+    query: {
+      foo: 'fooValue',
+      bar: 'barValue'
+    },
+    hash: '#FirstPart'
   });
 };
 </script>
